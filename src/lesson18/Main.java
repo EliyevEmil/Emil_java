@@ -11,13 +11,11 @@ public class Main {
 
         if (eded > 0) {
             System.out.println("Daxil edilən ədəd müsbətdir.");
-        }
 
-        if (eded < 0) {
+
+        } else if (eded < 0) {
             System.out.println("Daxil edilən ədəd mənfidir.");
-        }
-
-        if (eded == 0) {
+        } else {
             System.out.println("Daxil edilən ədəd sıfırdır.");
         }
     }
