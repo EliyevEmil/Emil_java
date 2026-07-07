@@ -1,46 +1,26 @@
 package lesson86;
 
-class Teyyare {
-    private String model;
-    private int suret;
+public class Main {
 
-    public Teyyare(String model, int suret) {
-        this.model = model;
-        this.suret = suret;
-    }
+    static class Heyvan {
+        String ad;
+        int yas;
+        String nov;
 
-    public String getModel() {
-        return model;
-    }
-
-    public void setModel(String model) {
-        this.model = model;
-    }
-
-    public int getSuret() {
-        return suret;
-    }
-
-    public void setSuret(int suret) {
-        if (suret > 0) {
-            this.suret = suret;
+        void melumatGoster() {
+            System.out.println("Ad: " + ad);
+            System.out.println("Yaş: " + yas);
+            System.out.println("Növ: " + nov);
         }
     }
 
-    public void uş() {
-        System.out.println(model + " təyyarəsi saatda " + suret + " km sürətlə göyə qalxdı!");
-    }
-}
-
-public class Main {
     public static void main(String[] args) {
+        Heyvan menimHeyvanim = new Heyvan();
 
-        Teyyare t1 = new Teyyare("Boeing 777", 900);
+        menimHeyvanim.ad = "Boncuk";
+        menimHeyvanim.yas = 3;
+        menimHeyvanim.nov = "pişik";
 
-        t1.uş();
-
-        t1.setSuret(950);
-        System.out.println("Yeni sürət: " + t1.getSuret() + " km/s");
-
+        menimHeyvanim.melumatGoster();
     }
 }

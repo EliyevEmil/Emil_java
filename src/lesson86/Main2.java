@@ -1,30 +1,35 @@
 package lesson86;
 
-class QiriciTeyyare {
-    String model;
-    int maxSuret;
-
-    public void hucumEt() {
-        System.out.println(model + " qırıcısı maksimum " + maxSuret + " km/s sürətlə hücuma keçdi!");
-    }
-}
-
 public class Main2 {
+
+    static class Telebe {
+        String ad;
+        int sinifNomresi;
+        double ortaQiymet;
+
+        void melumat() {
+            System.out.println("Ad: " + ad);
+            System.out.println("Sinif: " + sinifNomresi);
+            System.out.println("Orta qiymət: " + ortaQiymet);
+        }
+
+        boolean kechiblimi() {
+            if (ortaQiymet > 50) {
+                return true;
+            } else {
+                return false;
+            }
+        }
+    }
+
     public static void main(String[] args) {
+        Telebe telebe = new Telebe();
 
-        QiriciTeyyare jet1 = new QiriciTeyyare();
+        telebe.ad = "Əli";
+        telebe.sinifNomresi = 7;
+        telebe.ortaQiymet = 85.5;
 
-        jet1.model = "MiG-29";
-        jet1.maxSuret = 2400;
-
-        QiriciTeyyare jet2 = new QiriciTeyyare();
-
-        jet2.model = "F-16";
-        jet2.maxSuret = 2120;
-
-        System.out.println("Yaradılmış obyektlərin hərəkəti:");
-        jet1.hucumEt();
-        jet2.hucumEt();
-
+        telebe.melumat();
+        System.out.println("Keçib: " + telebe.kechiblimi());
     }
 }

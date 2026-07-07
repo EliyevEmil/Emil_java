@@ -1,28 +1,37 @@
 package lesson86;
 
-class Person {
-    String ad;
-    int yas;
-
-    public void tanisOl() {
-        System.out.println("Salam, mənim adım " + ad + ", " + yas + " yaşım var.");
-    }
-}
-
 public class Main3 {
+
+    static class Hesablayici {
+        int eded1;
+        int eded2;
+
+        int topla() {
+            return eded1 + eded2;
+        }
+
+        int cix() {
+            return eded1 - eded2;
+        }
+
+        int vur() {
+            return eded1 * eded2;
+        }
+
+        double bol() {
+            return (double) eded1 / eded2;
+        }
+    }
+
     public static void main(String[] args) {
+        Hesablayici hesabla = new Hesablayici();
 
-        Person insan1 = new Person();
-        insan1.ad = "Emil";
-        insan1.yas = 12;
+        hesabla.eded1 = 10;
+        hesabla.eded2 = 3;
 
-        Person insan2 = new Person();
-        insan2.ad = "Murad";
-        insan2.yas = 15;
-
-        System.out.println("Obyektlər işə düşür:");
-        insan1.tanisOl();
-        insan2.tanisOl();
-
+        System.out.println("Toplama: " + hesabla.topla());
+        System.out.println("Çıxma: " + hesabla.cix());
+        System.out.println("Vurma: " + hesabla.vur());
+        System.out.printf("Bölmə: %.2f\n", hesabla.bol());
     }
 }
