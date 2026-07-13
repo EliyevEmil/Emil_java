@@ -1,4 +1,4 @@
-package lesson93;
+package lesson91;
 
 public class Main6 {
     static int saygac = 0;
