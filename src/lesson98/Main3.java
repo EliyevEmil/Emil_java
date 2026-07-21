@@ -1,35 +1,34 @@
 package lesson98;
 
-public class Main3 {
+class Developer {
+    String ad;
+    int yas;
+    double maas;
 
-    static class Developer {
-        String ad;
-        int yas;
-        double maas;
-
-        public Developer() {
-            this("Naməlum", 0, 0.0);
-        }
-
-        public Developer(String ad) {
-            this(ad, 0, 0.0);
-        }
-
-        public Developer(String ad, int yas) {
-            this(ad, yas, 0.0);
-        }
-
-        public Developer(String ad, int yas, double maas) {
-            this.ad = ad;
-            this.yas = yas;
-            this.maas = maas;
-        }
-
-        public void melumatGoster() {
-            System.out.println("Ad: " + ad + ", Yaş: " + yas + ", Maaş: " + maas);
-        }
+    public Developer() {
+        this("Naməlum", 0, 0.0);
     }
 
+    public Developer(String ad) {
+        this(ad, 0, 0.0);
+    }
+
+    public Developer(String ad, int yas) {
+        this(ad, yas, 0.0);
+    }
+
+    public Developer(String ad, int yas, double maas) {
+        this.ad = ad;
+        this.yas = yas;
+        this.maas = maas;
+    }
+
+    public void melumatGoster() {
+        System.out.println("Ad: " + ad + ", Yaş: " + yas + ", Maaş: " + maas);
+    }
+}
+
+public class Main3 {
     public static void main(String[] args) {
         Developer dev1 = new Developer();
         Developer dev2 = new Developer("Əli");
