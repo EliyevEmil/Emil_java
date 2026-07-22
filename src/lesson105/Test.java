@@ -1,0 +1,9 @@
+package lesson105;
+
+public class Test {
+    static int count = 0;
+
+    public Test() {
+        count++;
+    }
+}
