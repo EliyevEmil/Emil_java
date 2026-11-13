@@ -7,7 +7,7 @@ import java.util.List;
 public class ProductService {
     private final String URL = "jdbc:mysql://localhost:3306/magaza";
     private final String USER = "root";
-    private final String PASSWORD = "şifrəniz";
+    private final String PASSWORD = "Emil_Aliyev!2014!@#";
 
     public List<Product> findAll() {
         List<Product> products = new ArrayList<>();
