@@ -3,9 +3,9 @@ package lesson155;
 import java.sql.*;
 
 public class Main {
-    static final String URL = "jdbc:mysql://localhost:3306/lesson155";
+    static final String URL = "jdbc:mysql://localhost:3306/emil";
     static final String USER = "root";
-    static final String PASSWORD = "senin_sifren";
+    static final String PASSWORD = "Emil_Aliyev!2014!@#";
 
     public static void main(String[] args) {
         System.out.println("--- 1. Məhsul əlavə olunur ---");
